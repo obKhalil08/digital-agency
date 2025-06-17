@@ -6,7 +6,7 @@ export default function ContactUsButton() {
   return (
     <Link 
         href='/contact'
-        className='inline-block bg-green-50 py-3 desktop:py-16 px-[18px] desktop:px-6 rounded-md desktop:rounded-lg text-grey-15 font-medium'
+        className='hidden laptop:inline-block bg-green-50 py-3 desktop:py-16 px-[18px] desktop:px-6 rounded-md desktop:rounded-lg text-grey-15 font-medium'
     >
         Contact Us
     </Link>

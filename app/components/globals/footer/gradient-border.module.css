@@ -1,0 +1,15 @@
+.gradient_border {
+    position: relative;
+}
+
+.gradient_border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(to bottom, #2E2E2EFF, #2E2E2E00);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+}

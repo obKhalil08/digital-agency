@@ -1,7 +1,8 @@
 import React from 'react'
-import Logo from './logo'
+import Logo from '../logo'
 import ContactUsButton from './contact-us-button'
 import Navlinks from './navlinks'
+import Hamburger from './hamburger'
 
 export default function Navbar() {
   return (
@@ -9,6 +10,7 @@ export default function Navbar() {
       <Logo />
       <Navlinks />
       <ContactUsButton />
+      <Hamburger />
     </nav>
   )
 }

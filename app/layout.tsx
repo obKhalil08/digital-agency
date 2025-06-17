@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${barlow.variable} antialiased bg-grey-10 text-white flex flex-col min-h-screen`}
       >
         <Navbar />
-        <div className="grow bg-red-400">
+        <div className="grow px-4 laptop:px-20 desktop:px-[162px]">
           {children}
         </div>
         <Footer />

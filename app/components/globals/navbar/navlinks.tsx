@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Navlinks() {
   return (
-    <ul className='flex gap-6 desktop:gap-[30px]'>
+    <ul className='hidden laptop:flex gap-6 desktop:gap-[30px]'>
         {
             navlinks.map((link, index) => (
                 <li key={index}>
