@@ -1,0 +1,13 @@
+.grid_pattern_overlay {
+    position: relative;
+}
+
+.grid_pattern_overlay::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0px;
+    background-image: url("/square-patterns.svg");
+
+    background-size: 40px 40px;
+}
