@@ -1,8 +1,8 @@
 import React from 'react'
-import ClientsCarousel from './clients-carousel';
+import ClientsCarousel from '../clients-carousel';
 import { companies } from '@/app/lib/constants/countries';
 import Image from 'next/image';
-import SectionWrapper from '../globals/section-wrapper';
+import SectionWrapper from '../../globals/section-wrapper';
 
 export default function ClientsSection() {
   return (

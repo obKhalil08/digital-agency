@@ -22,7 +22,7 @@ export default function StayConnected() {
 function SocialMediaLink({ icon, href }: { icon: string, href: string }) {
   return (
     <GradientBox>
-      <a href={href}>
+      <a href={href} className='inline-flex p-4 desktop:p-5'>
         <Image src={icon} alt='social media icon' className='w-5 desktop:w-6' />
       </a>
     </GradientBox>

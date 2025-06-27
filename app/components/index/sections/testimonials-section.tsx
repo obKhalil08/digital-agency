@@ -1,9 +1,9 @@
 import React from 'react'
 
-import SectionWrapper from '../globals/section-wrapper';
-import AnimatedBg from '../animation/animated-bg';
+import SectionWrapper from '../../globals/section-wrapper';
+import AnimatedBg from '../../animation/animated-bg';
 import testimonials from '@/app/lib/constants/testimonials';
-import Testimonial from './testimonial';
+import Testimonial from '../testimonial';
 
 export default function TestimonialsSection() {
   return (

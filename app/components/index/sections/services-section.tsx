@@ -1,14 +1,14 @@
 import React from 'react'
 
-import SectionWrapper from '../globals/section-wrapper';
-import GradientBox from '../globals/gradient-box';
+import SectionWrapper from '../../globals/section-wrapper';
+import GradientBox from '../../globals/gradient-box';
 import Image from 'next/image';
 
 import PaintBrushSvg from "@/public/images/paint-brush.svg";
 import PuzzlePieceSvg from "@/public/images/puzzle-piece.svg";
 import BatterySvg from "@/public/images/battery.svg";
-import HoverScaleWrapper from '../animation/hover-scale-wrapper';
-import AnimatedBg from '../animation/animated-bg';
+import HoverScaleWrapper from '../../animation/hover-scale-wrapper';
+import AnimatedBg from '../../animation/animated-bg';
 
 export default function ServicesSection() {
   return (
@@ -21,8 +21,10 @@ export default function ServicesSection() {
           <div className='flex flex-col laptop:flex-row gap-[1px]'>
             <div className='bg-grey-10 p-[30px] flex flex-col gap-6 laptop:gap-3.5 desktop:gap-5'>
               <div className='flex gap-3.5 items-center laptop:flex-col laptop:gap-[30px] laptop:items-start desktop:gap-10'>
-                <GradientBox className='w-[58px] h-[58px] laptop:w-[70px] laptop:h-[70px] desktop:w-[88px] desktop:h-[88px]'>
-                  <Image src={PaintBrushSvg} alt='paint brush' className='w-[26px] laptop:w-[30px] desktop:w-[40px]' />
+                <GradientBox>
+                    <span className='inline-flex p-4 laptop:p-5 desktop:p-6'>
+                        <Image src={PaintBrushSvg} alt='paint brush' className='w-[26px] laptop:w-[30px] desktop:w-[40px]' />
+                    </span>
                 </GradientBox>
                 <h3 className='font-semibold text-[20px] laptop:text-2xl desktop:text-[30px]'>Design</h3>
               </div>

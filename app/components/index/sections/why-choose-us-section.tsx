@@ -1,14 +1,14 @@
 import React from 'react'
 
-import SectionWrapper from '../globals/section-wrapper';
-import GradientBox from '../globals/gradient-box';
+import SectionWrapper from '../../globals/section-wrapper';
+import GradientBox from '../../globals/gradient-box';
 import Image from 'next/image';
 
 import MedalSvg from "@/public/images/medal.svg";
 import UsersSvg from "@/public/images/users.svg";
 import ShieldSvg from "@/public/images/shield.svg";
 import CrownSvg from "@/public/images/crown.svg";
-import AnimatedBg from '../animation/animated-bg';
+import AnimatedBg from '../../animation/animated-bg';
 
 export default function WhyChooseUsSection() {
   return (
@@ -21,8 +21,10 @@ export default function WhyChooseUsSection() {
           <div className='flex flex-col laptop:grid laptop:grid-cols-2 gap-[1px]'>
             <div className='bg-grey-10 px-[30px] py-10 laptop:p-[60px] desktop:p-20 flex flex-col gap-6 laptop:gap-[30px] desktop:gap-10'>
               <div className='flex gap-3.5 items-center desktop:gap-5'>
-                <GradientBox className='w-[58px] h-[58px] laptop:w-[70px] laptop:h-[70px] desktop:w-[88px] desktop:h-[88px]'>
-                  <Image src={MedalSvg} alt='paint brush' className='w-[26px] laptop:w-[30px] desktop:w-[40px]' />
+                <GradientBox>
+                    <span className='inline-flex p-4 laptop:p-5 desktop:p-6'>
+                        <Image src={MedalSvg} alt='paint brush' className='w-[26px] laptop:w-[30px] desktop:w-[40px]' />
+                    </span>
                 </GradientBox>
                 <h3 className='font-semibold text-[20px] laptop:text-2xl desktop:text-[30px]'>Expertise</h3>
               </div>

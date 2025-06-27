@@ -1,36 +1,16 @@
-"use client"
-
-import React, { useRef } from 'react'
+import React from 'react'
 
 import gridPatternOverlay from "@/app/grid-overlay.module.css";
-import LinkButton from '../globals/button/link';
-import FadeIn from '../animation/fade-in';
-import Typewriter from '../animation/typewriter';
-import SectionWrapper from '../globals/section-wrapper';
-import { useScroll, useTransform , motion} from 'motion/react';
+import LinkButton from '../../globals/button/link';
+import FadeIn from '../../animation/fade-in';
+import SectionWrapper from '../../globals/section-wrapper';
+import HeroHeading from '../hero-heading';
 
-export default function HeroSection() {
-  const divRef = useRef(null);
-  const {scrollYProgress} = useScroll({target: divRef, offset: [`start 22%` as any, `start 10%` as any]});
-
-  const colorStop = useTransform(scrollYProgress, value => `${value * 100}%`);
-  const background = useTransform(
-      colorStop,
-      stop => `linear-gradient(#9EFF00 ${stop}, white ${stop})`
-  );
-  
+export default function HeroSection() {  
   return (
     <SectionWrapper className={`${gridPatternOverlay.grid_pattern_overlay} pt-20 laptop:pt-28 h-[calc(100vh-87px)] laptop:h-[calc(100vh-85px)] desktop:h-[calc(100vh-101px)] bg-[url("/hero-bg.png")] bg-no-repeat bg-bottom px-4`}>
         <h1 className='font-semibold text-[34px] laptop:text-5xl desktop:text-[68px] text-center'>
-          <motion.div ref={divRef} className='bg-clip-text' style={{backgroundImage: background}} >
-            <Typewriter interval={.07} className='text-transparent'>
-              A Digital Product Studio
-            </Typewriter>
-            <br />
-            <Typewriter interval={.07} transition={{delay: 1.68}} className='text-transparent'>
-              That Will Work
-            </Typewriter>
-          </motion.div>
+          <HeroHeading />
         </h1>
         <div className='mt-[30px]'>
           <p className='visible laptop:hidden bg-[#242424]/20 border border-grey-15 rounded-lg px-5 py-[18px] text-center'>For startups, enterprise leaders, media & publishers, and social good.</p>
@@ -73,4 +53,8 @@ function HighlightedSpan({ children }: { children: React.ReactNode }) {
         {children}
       </span>
     )
+}
+
+function Heading() {
+
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroSection from './components/index/hero-section'
-import ClientsSection from './components/index/clients-section'
-import ServicesSection from './components/index/services-section'
-import WhyChooseUsSection from './components/index/why-choose-us-section'
-import TestimonialsSection from './components/index/testimonials-section'
-import FaqSection from './components/index/faq-section'
-import ThankYouSection from './components/index/thank-you-section'
+import HeroSection from './components/index/sections/hero-section'
+import ClientsSection from './components/index/sections/clients-section'
+import ServicesSection from './components/index/sections/services-section'
+import WhyChooseUsSection from './components/index/sections/why-choose-us-section'
+import TestimonialsSection from './components/index/sections/testimonials-section'
+import FaqSection from './components/index/sections/faq-section'
+import ThankYouSection from './components/index/sections/thank-you-section'
 
 export default function page() {
   return (
@@ -16,7 +16,7 @@ export default function page() {
       <WhyChooseUsSection />
       <TestimonialsSection />
       <FaqSection />
-      <ThankYouSection />
+      {/* <ThankYouSection />? */}
     </main>
   )
 }

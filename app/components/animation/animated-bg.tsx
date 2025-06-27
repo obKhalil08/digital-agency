@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useRef } from 'react'
-import style from "./style.module.css";
 import { useTransform, useScroll, motion } from 'motion/react';
 
 export default function AnimatedBg({className="", topOffset="10", bottomOffset="10", gradientType="linear", direction=180, children}: {className?: string; topOffset?: string; bottomOffset?: string; gradientType?: "linear" | "radial"; direction?: number; children: React.ReactNode}) {
@@ -15,7 +14,7 @@ export default function AnimatedBg({className="", topOffset="10", bottomOffset="
     );
 
     return (
-        <motion.div ref={divRef} style={{background}} className={`p-[1px] ${className} ${style.animatedBg}`}>
+        <motion.div ref={divRef} style={{backgroundImage: background}} className={`p-[1px] ${className}`}>
             {children}
         </motion.div>
     )
