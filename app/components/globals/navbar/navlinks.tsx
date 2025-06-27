@@ -1,11 +1,11 @@
-import { navlinks } from '@/app/lib/constants'
+import { navlinks } from '@/app/lib/constants/navlinks'
 import Link from 'next/link'
 import React from 'react'
 
 
 export default function Navlinks() {
   return (
-    <ul className='flex gap-6 desktop:gap-[30px]'>
+    <ul className='hidden laptop:flex gap-6 desktop:gap-[30px]'>
         {
             navlinks.map((link, index) => (
                 <li key={index}>

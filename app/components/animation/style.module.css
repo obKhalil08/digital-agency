@@ -1,0 +1,5 @@
+.animatedBg {}
+
+.animatedBg > * {
+    /* background-color: inherit; */
+}
