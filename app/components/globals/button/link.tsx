@@ -1,14 +1,10 @@
-"use client"
-
 import Link from 'next/link'
 import React from 'react'
-
-import { motion } from "motion/react"
-
+import HoverScaleWrapper from '../../animation/hover-scale-wrapper'
 
 export default function LinkButton({type = 'primary', href = "#", children, ...props}: {type?: 'primary' | 'secondary', href?: string, children?: React.ReactNode}) {
   return (
-    <motion.div whileHover={{scale: 1.05}} whileTap={{scale: 0.95}}>
+    <HoverScaleWrapper>
       <Link
           href={href}
           {...props}
@@ -16,6 +12,6 @@ export default function LinkButton({type = 'primary', href = "#", children, ...p
       >
           {children}
       </Link>
-    </motion.div>
+    </HoverScaleWrapper>
   )
 }

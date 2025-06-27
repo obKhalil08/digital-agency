@@ -1,4 +1,4 @@
-import { navlinks } from '@/app/lib/constants'
+import { navlinks } from '@/app/lib/constants/navlinks'
 import Link from 'next/link'
 import React from 'react'
 

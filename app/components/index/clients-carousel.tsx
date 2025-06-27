@@ -87,7 +87,7 @@ export default function ClientsCarousel() {
     }, [scrollDirection])
 
     useEffect(() => {
-        console.log("Animating from", startX, "to", endX);
+        // console.log("Animating from", startX, "to", endX);
         controlsCenter.current?.pause();
         controlsLeft.current?.pause();
         controlsRight.current?.pause();
